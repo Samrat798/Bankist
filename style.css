@@ -1,3 +1,5 @@
+/* The page is NOT responsive. You can implement responsiveness yourself if you wanna have some fun 😃 */
+
 :root {
   --color-primary: #5ec576;
   --color-secondary: #ffcb03;
@@ -30,10 +32,13 @@ body {
   line-height: 1.9;
   background-color: #f3f3f3;
 }
+
 /* GENERAL ELEMENTS */
+/* General elements */
 .section {
   padding: 15rem 3rem;
-  border-top: #ddd;
+  border-top: 1px solid #ddd;
+
   transition: transform 1s, opacity 1s;
 }
 
@@ -108,6 +113,7 @@ img {
 .lazy-img {
   filter: blur(20px);
 }
+
 /* Navigation */
 .nav {
   display: flex;
@@ -134,6 +140,7 @@ img {
   align-items: center;
   list-style: none;
 }
+
 .nav__item {
   margin-left: 4rem;
 }
@@ -162,6 +169,7 @@ img {
   background-color: var(--color-primary-darker);
   color: #333;
 }
+
 /* Header */
 .header {
   padding: 0 3rem;
@@ -170,28 +178,34 @@ img {
   flex-direction: column;
   align-items: center;
 }
+
 .header__title {
   flex: 1;
+
   max-width: 115rem;
   display: grid;
   grid-template-columns: 3fr 2fr;
   row-gap: 3rem;
   align-content: center;
   justify-content: center;
+
   align-items: start;
   justify-items: start;
 }
+
 h1 {
   font-size: 5.5rem;
   line-height: 1.35;
 }
+
 h4 {
   font-size: 2.4rem;
   font-weight: 500;
 }
+
 .header__img {
   width: 100%;
-  grid-column: 2/3;
+  grid-column: 2 / 3;
   grid-row: 1 / span 4;
   transform: translateY(-6rem);
 }
@@ -259,6 +273,7 @@ h4 {
 .operations {
   max-width: 100rem;
   margin: 12rem auto 0 auto;
+
   background-color: #fff;
 }
 
@@ -267,9 +282,9 @@ h4 {
   justify-content: center;
 }
 
-.operations__tab:not(:last-child) {
+.operations__tab {
   margin-right: 2.5rem;
-  /* transform: translateY(-50%); */
+  transform: translateY(-50%);
 }
 
 .operations__tab span {
@@ -281,25 +296,26 @@ h4 {
 .operations__tab--1 {
   background-color: var(--color-secondary);
 }
+
 .operations__tab--1:hover {
   background-color: var(--color-secondary-darker);
 }
-.operations__tab--2 {
+
+.operations__tab--3 {
   background-color: var(--color-tertiary);
   margin: 0;
 }
 
-.operations__tab--2:hover {
+.operations__tab--3:hover {
   background-color: var(--color-tertiary-darker);
 }
 
 .operations__tab--active {
-  transform: translateY(-50%);
+  transform: translateY(-66%);
 }
 
 .operations__content {
   display: none;
-  /* Just Presentational */
   font-size: 1.7rem;
   padding: 2.5rem 7rem 6.5rem 7rem;
 }
@@ -338,15 +354,12 @@ h4 {
 .operations__icon--1 {
   background-color: var(--color-secondary-opacity);
 }
-
 .operations__icon--2 {
   background-color: var(--color-primary-opacity);
 }
-
 .operations__icon--3 {
   background-color: var(--color-tertiary-opacity);
 }
-
 .operations__icon--1 svg {
   fill: var(--color-secondary-darker);
 }
@@ -363,6 +376,7 @@ h4 {
   height: 50rem;
   margin: 0 auto;
   position: relative;
+
   overflow: hidden;
 }
 
@@ -371,6 +385,7 @@ h4 {
   top: 0;
   width: 100%;
   height: 50rem;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -387,8 +402,9 @@ h4 {
   position: absolute;
   top: 50%;
   z-index: 10;
+
   border: none;
-  background-color: rgba(255, 255, 355, 0.7);
+  background: rgba(255, 255, 255, 0.7);
   font-family: inherit;
   color: #333;
   border-radius: 50%;
@@ -426,6 +442,9 @@ h4 {
   margin-right: 1.75rem;
   cursor: pointer;
   transition: all 0.5s;
+
+  /* Only necessary when overlying images */
+  /* box-shadow: 0 0.6rem 1.5rem rgba(0, 0, 0, 0.7); */
 }
 
 .dots__dot:last-child {
@@ -433,15 +452,16 @@ h4 {
 }
 
 .dots__dot--active {
+  /* background-color: #fff; */
   background-color: #888;
   opacity: 1;
 }
 
-/* Testimonials */
 .testimonial {
   width: 65%;
   position: relative;
 }
+
 .testimonial::before {
   content: "\201C";
   position: absolute;
@@ -453,42 +473,50 @@ h4 {
   color: var(--color-primary);
   z-index: -1;
 }
+
 .testimonial__header {
   font-size: 2.25rem;
   font-weight: 500;
   margin-bottom: 1.5rem;
 }
+
 .testimonial__text {
   font-size: 1.7rem;
   margin-bottom: 3.5rem;
   color: #666;
 }
+
 .testimonial__author {
   margin-left: 3rem;
-  font-size: normal;
+  font-style: normal;
+
   display: grid;
   grid-template-columns: 6.5rem 1fr;
   column-gap: 2rem;
 }
+
 .testimonial__photo {
   grid-row: 1 / span 2;
   width: 6.5rem;
   border-radius: 50%;
 }
+
 .testimonial__name {
   font-size: 1.7rem;
   font-weight: 500;
   align-self: end;
   margin: 0;
 }
+
 .testimonial__location {
   font-size: 1.5rem;
 }
+
 .section__title--testimonials {
   margin-bottom: 4rem;
 }
 
-/* Sign Up */
+/* Signup */
 .section--sign-up {
   background-color: #37383d;
   border-top: none;
@@ -496,50 +524,63 @@ h4 {
   text-align: center;
   padding: 10rem 3rem;
 }
+
 .section--sign-up .section__header {
   color: #fff;
   text-align: center;
 }
+
+.section--sign-up .section__title {
+  margin-bottom: 6rem;
+}
+
 .section--sign-up .btn {
   font-size: 1.9rem;
   padding: 2rem 5rem;
 }
+
 /* Footer */
 .footer {
   padding: 10rem 3rem;
   background-color: #37383d;
 }
+
 .footer__nav {
   list-style: none;
   display: flex;
   justify-content: center;
   margin-bottom: 5rem;
 }
+
 .footer__item {
   margin-right: 4rem;
 }
+
 .footer__link {
   font-size: 1.6rem;
   color: #eee;
   text-decoration: none;
 }
+
 .footer__logo {
   height: 5rem;
   display: block;
   margin: 0 auto;
   margin-bottom: 5rem;
 }
+
 .footer__copyright {
   font-size: 1.4rem;
   color: #aaa;
   text-align: center;
 }
+
 .footer__copyright .footer__link {
   font-size: 1.4rem;
 }
 
-/* MOdel Window */
-.model {
+/* Model Window */
+.modal {
   position: fixed;
   top: 50%;
   left: 50%;
@@ -551,6 +592,7 @@ h4 {
   z-index: 1000;
   transition: all 0.5s;
 }
+
 .overlay {
   position: fixed;
   top: 0;
@@ -563,34 +605,39 @@ h4 {
   transition: all 0.5s;
 }
 
-.model__header {
+.modal__header {
   font-size: 3.25rem;
   margin-bottom: 4.5rem;
   line-height: 1.5;
 }
-.model__form {
+
+.modal__form {
   margin: 0 3rem;
   display: grid;
   grid-template-columns: 1fr 2fr;
   align-items: center;
   gap: 2.5rem;
 }
-.model__form label {
+
+.modal__form label {
   font-size: 1.7rem;
   font-weight: 500;
 }
-.model__form input {
+
+.modal__form input {
   font-size: 1.7rem;
   padding: 1rem 1.5rem;
   border: 1px solid #ddd;
   border-radius: 0.5rem;
 }
-.model__form button {
+
+.modal__form button {
   grid-column: 1 / span 2;
   justify-self: center;
   margin-top: 1rem;
 }
-.btn--close-model {
+
+.btn--close-modal {
   font-family: inherit;
   color: inherit;
   position: absolute;
@@ -601,18 +648,18 @@ h4 {
   border: none;
   background: none;
 }
+
 .hidden {
   visibility: hidden;
   opacity: 0;
 }
 
-/* Cookie Message */
 .cookie-message {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   width: 100%;
-  background-color: #fff;
+  background-color: white;
   color: #bbb;
   font-size: 1.5rem;
   font-weight: 400;

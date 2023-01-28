@@ -2,45 +2,48 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="shortcut icon" type="image/png" href="img/icon.png" />
+
     <link
       href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap"
       rel="stylesheet"
     />
-    <title>Bankist | When Banking meets Minimalist</title>
     <link rel="stylesheet" href="style.css" />
+    <title>Bankist | When Banking meets Minimalist</title>
   </head>
   <body>
     <header class="header">
       <nav class="nav">
         <img
           src="img/logo.png"
-          alt="Bankist Logo"
+          alt="Bankist logo"
           class="nav__logo"
           id="logo"
         />
         <ul class="nav__links">
           <li class="nav__item">
-            <a href="#section--1" class="nav__link">Features</a>
+            <a class="nav__link" href="#section--1">Features</a>
           </li>
           <li class="nav__item">
-            <a href="#section--2" class="nav__link">Operations</a>
+            <a class="nav__link" href="#section--2">Operations</a>
           </li>
           <li class="nav__item">
-            <a href="#section--3" class="nav__link">Testimonials</a>
+            <a class="nav__link" href="#section--3">Testimonials</a>
           </li>
           <li class="nav__item">
-            <a href="#" class="nav__link nav__link--btn btn--show-model"
+            <a class="nav__link nav__link--btn btn--show-modal" href="#"
               >Open account</a
             >
           </li>
         </ul>
       </nav>
+
       <div class="header__title">
         <h1>
           When
+          <!-- Green highlight effect -->
           <span class="highlight">banking</span>
           meets<br />
           <span class="highlight">minimalist</span>
@@ -49,11 +52,12 @@
         <button class="btn--text btn--scroll-to">Learn more &DownArrow;</button>
         <img
           src="img/hero.png"
-          alt="Minimalist bank items"
           class="header__img"
+          alt="Minimalist bank items"
         />
       </div>
     </header>
+
     <section class="section" id="section--1">
       <div class="section__title">
         <h2 class="section__description">Features</h2>
@@ -61,6 +65,7 @@
           Everything you need in a modern bank and more.
         </h3>
       </div>
+
       <div class="features">
         <img
           src="img/digital-lazy.jpg"
@@ -81,6 +86,7 @@
             debitis ducimus.
           </p>
         </div>
+
         <div class="features__feature">
           <div class="features__icon">
             <svg>
@@ -100,6 +106,7 @@
           alt="Plant"
           class="features__img lazy-img"
         />
+
         <img
           src="img/card-lazy.jpg"
           data-src="img/card.jpg"
@@ -121,6 +128,7 @@
         </div>
       </div>
     </section>
+
     <section class="section" id="section--2">
       <div class="section__title">
         <h2 class="section__description">Operations</h2>
@@ -197,6 +205,7 @@
         </div>
       </div>
     </section>
+
     <section class="section" id="section--3">
       <div class="section__title section__title--testimonials">
         <h2 class="section__description">Not sure yet?</h2>
@@ -208,7 +217,7 @@
       <div class="slider">
         <div class="slide slide--1">
           <div class="testimonial">
-            <h5 class="testimonial__header">Bast financial decision ever!</h5>
+            <h5 class="testimonial__header">Best financial decision ever!</h5>
             <blockquote class="testimonial__text">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit.
               Accusantium quas quisquam non? Quas voluptate nulla minima
@@ -218,11 +227,7 @@
               autem esse non voluptatem saepe provident nihil molestiae.
             </blockquote>
             <address class="testimonial__author">
-              <img
-                src="img/user-1.jpg"
-                alt="user 1"
-                class="testimonial__photo"
-              />
+              <img src="img/user-1.jpg" alt="" class="testimonial__photo" />
               <h6 class="testimonial__name">Aarav Lynn</h6>
               <p class="testimonial__location">San Francisco, USA</p>
             </address>
@@ -239,14 +244,10 @@
               ducimus neque ipsam modi voluptatibus doloremque, corrupti
               laborum. Incidunt numquam perferendis veritatis neque repellendus.
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo
-              deserunt exercitationem deleniti
+              deserunt exercitationem deleniti.
             </blockquote>
             <address class="testimonial__author">
-              <img
-                src="img/user-2.jpg"
-                alt="user 2"
-                class="testimonial__photo"
-              />
+              <img src="img/user-2.jpg" alt="" class="testimonial__photo" />
               <h6 class="testimonial__name">Miyah Miles</h6>
               <p class="testimonial__location">London, UK</p>
             </address>
@@ -267,82 +268,88 @@
               alias reiciendis, perferendis facere.
             </blockquote>
             <address class="testimonial__author">
-              <img
-                src="img/user-3.jpg"
-                alt="user 3"
-                class="testimonial__photo"
-              />
+              <img src="img/user-3.jpg" alt="" class="testimonial__photo" />
               <h6 class="testimonial__name">Francisco Gomes</h6>
               <p class="testimonial__location">Lisbon, Portugal</p>
             </address>
           </div>
         </div>
+
+        <!-- <div class="slide"><img src="img/img-1.jpg" alt="Photo 1" /></div>
+        <div class="slide"><img src="img/img-2.jpg" alt="Photo 2" /></div>
+        <div class="slide"><img src="img/img-3.jpg" alt="Photo 3" /></div>
+        <div class="slide"><img src="img/img-4.jpg" alt="Photo 4" /></div> -->
         <button class="slider__btn slider__btn--left">&larr;</button>
         <button class="slider__btn slider__btn--right">&rarr;</button>
         <div class="dots"></div>
       </div>
     </section>
+
     <section class="section section--sign-up">
       <div class="section__title">
         <h3 class="section__header">
           The best day to join Bankist was one year ago. The second best is
-          Today!
+          today!
         </h3>
       </div>
-      <button class="btn btn--show-model">Open your free account today!</button>
+      <button class="btn btn--show-modal">Open your free account today!</button>
     </section>
+
     <footer class="footer">
       <ul class="footer__nav">
         <li class="footer__item">
-          <a href="#" class="footer__link">About</a>
+          <a class="footer__link" href="#">About</a>
         </li>
         <li class="footer__item">
-          <a href="#" class="footer__link">Pricing</a>
+          <a class="footer__link" href="#">Pricing</a>
         </li>
         <li class="footer__item">
-          <a href="#" class="footer__link">Terms of Use</a>
+          <a class="footer__link" href="#">Terms of Use</a>
         </li>
         <li class="footer__item">
-          <a href="#" class="footer__link">Privacy Policy</a>
+          <a class="footer__link" href="#">Privacy Policy</a>
         </li>
         <li class="footer__item">
-          <a href="#" class="footer__link">Careers</a>
+          <a class="footer__link" href="#">Careers</a>
         </li>
         <li class="footer__item">
-          <a href="#" class="footer__link">Blog</a>
+          <a class="footer__link" href="#">Blog</a>
         </li>
         <li class="footer__item">
-          <a href="#" class="footer__link">Contact Us</a>
+          <a class="footer__link" href="#">Contact Us</a>
         </li>
       </ul>
-      <img src="img/icon.png" alt="logo" class="footer__logo" />
+      <img src="img/icon.png" alt="Logo" class="footer__logo" />
       <p class="footer__copyright">
         &copy; Copyright by
         <a
-          href="https://twitter.com/SamratM18346624"
           class="footer__link twitter-link"
           target="_blank"
-          >Samrat Majumder</a
-        >.
+          href="https://twitter.com/jonasschmedtman"
+          >Jonas Schmedtmann</a
+        >. Use for learning or your portfolio. Don't use to teach. Don't claim
+        as your own product.
       </p>
     </footer>
-    <div class="model hidden">
-      <button class="btn--close-model">&times;</button>
-      <h2 class="model__header">
+
+    <div class="modal hidden">
+      <button class="btn--close-modal">&times;</button>
+      <h2 class="modal__header">
         Open your bank account <br />
         in just <span class="highlight">5 minutes</span>
       </h2>
-      <form action="" class="model__form">
+      <form class="modal__form">
         <label>First Name</label>
         <input type="text" />
         <label>Last Name</label>
         <input type="text" />
         <label>Email Address</label>
-        <input type="text" />
+        <input type="email" />
         <button class="btn">Next step &rarr;</button>
       </form>
     </div>
     <div class="overlay hidden"></div>
+
     <script src="app.js"></script>
   </body>
 </html>
